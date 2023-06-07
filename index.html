@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen unidad 1 | TV</title>
+    <style>
+        button{width: max-content;}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><button onclick="tv.togglePower()">Encender / Apagar</button></td>
+            <td><button onclick="tv.increaseVolume()">Volumen +</button></td>
+            <td><button onclick="tv.nextChannel()">Canal +</button></td>
+            <td><button onclick="tv.toggleMute()">Silenciar</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button onclick="tv.decreaseVolume()">Volumen -</button></td>
+            <td><button onclick="tv.previousChannel()">Canal -</button></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <script src="./main.js"></script>
+</body>
+</html>
