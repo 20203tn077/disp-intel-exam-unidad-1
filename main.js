@@ -50,39 +50,12 @@ const tv = {
         this.showState()
     },
     showState() {
-        console.log('')
-        console.log(`Estado:    ${this.on ? 'Encendida' : 'Apagada'}`)
-        console.log(`Volumen:   ${this.volume}`)
-        console.log(`Canal:     ${this.channel}`)
-        console.log(`Silencio:  ${this.muted === '' ? '' : this.muted ? 'Sí' : 'No'}`)
-        console.log('----------------------------')
+        console.log(
+`Estado:    ${this.on ? 'Encendida' : 'Apagada'}
+Volumen:   ${this.volume}
+Canal:     ${this.channel}
+Silencio:  ${this.muted === '' ? '' : this.muted ? 'Sí' : 'No'}
+----------------------------`
+        )
     }
 }
-
-// Se solicita realizar el desarrollo de una aplicación en javascript con html básico que
-// permita realizar la modificación de propiedades de un elemento/objeto de javascript por
-// medio de click en botones.
-// En este caso se deberá representar en un objeto javascript una televisión la cual pueda
-// pueda ser encendida y apagada.
-// En caso de estar encendida se deberán poder realizar la siguientes acciones:
-// ● Subir volumen.
-// ○ Máximo al 10
-// ○ Al encender en 3
-// ● Bajar volumen.
-// ○ Mínimo al 1
-// ● Subir al siguiente canal.
-// ○ Máximo al 100
-// ○ Al encender en 7
-// ● Bajar al siguiente canal.
-// ○ Mínimo al 1
-// ● Activar/desactivar Mutear/Silenciar
-// ○ Al activar cambia el volumen a 0
-// ○ Al desactivar regresa el volumen al valor anterior.
-
-// Nota importante:
-// ● Al pulsar cada botón se deberá imprimir el consola el estado final después de
-// hacer los cambios al objeto que representa la televisión. En caso de no poder
-// hacer la acción deberá indicar el motivo. Por ejemplo: “Volumen al máximo”
-// “Televisión apagada”
-// ● Se espera mínimamente una interfaz en HTML como se muestra en la siguiente
-// imagen.
